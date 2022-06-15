@@ -5,12 +5,12 @@
     <nav #sidenav="ngbNav" ngbNav (navChange)="onSidebarNavChange($event)"
          class="col-md-2 d-none d-md-block sidebar position-fixed px-0">
       <div class="flex-column text-uppercase">
-        <ng-container [ngbNavItem]="'logo'">
+        <!-- <ng-container [ngbNavItem]="'logo'">
           <a [routerLink]="['/']">
             <img class="logo-full mx-3 mt-3 mb-1" src="/static/svg/logo.svg" alt="" width="175" height="">
             <img class="logo-icon mx-3 mt-3 mb-1" src="/static/svg/logo-icon.svg" alt="" width="32" height="">
           </a>
-        </ng-container>
+        </ng-container> -->
         <hr>
 
         <ng-template ngFor let-r [ngForOf]="routes">
@@ -21,11 +21,11 @@
         </ng-template>
 
         <hr />
-        <a class="nav-link" href="https://cloud.heroiclabs.com" target="_blank"><img class="link-icon mr-1" src="/static/svg/heroiccloud.svg" alt="" width="24" height=""><span class="link-text">Heroic Cloud</span></a>
+        <!-- <a class="nav-link" href="https://cloud.heroiclabs.com" target="_blank"><img class="link-icon mr-1" src="/static/svg/heroiccloud.svg" alt="" width="24" height=""><span class="link-text">Heroic Cloud</span></a>
         <a class="nav-link" href="https://heroiclabs.com/docs" target="_blank"><img class="link-icon mr-1" src="/static/svg/docs.svg" alt="" width="24" height=""><span class="link-text">Documentation</span></a>
         <a class="nav-link" href="https://forum.heroiclabs.com" target="_blank"><img class="link-icon mr-1" src="/static/svg/forum.svg" alt="" width="24" height=""><span class="link-text">Forum</span></a>
-        <a class="nav-link" href="https://heroiclabs.com/blog" target="_blank"><img class="link-icon mr-1" src="/static/svg/blog.svg" alt="" width="24" height=""><span class="link-text">Heroic Labs Blog</span></a>
-        <hr />
+        <a class="nav-link" href="https://heroiclabs.com/blog" target="_blank"><img class="link-icon mr-1" src="/static/svg/blog.svg" alt="" width="24" height=""><span class="link-text">Heroic Labs Blog</span></a> -->
+        <!-- <hr /> -->
         <div class="logged-in-as nav-link disabled">Logged in as: {{getUsername()}}</div>
         <ng-container [ngbNavItem]="'logout'">
           <a ngbNavLink routerLinkActive="active" [routerLink]="['/login']" (click)="logout()"><img class="mr-1" src="/static/svg/log-out.svg" alt="" width="24" height=""><span class="link-text">Logout</span></a>
